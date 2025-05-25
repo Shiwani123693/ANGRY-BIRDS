@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+ 
+  
+     
+      font-family: sans-serif;
+      background-image: url(angrybird.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+  
+    z-index: -1;
+
+
+  
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+.container{
+    width:100%;
+    height:100vh;
+    background-color: rgab(0,0,0,0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.welcome {
+    height: 20%;
+    width: 40%;
+  background-color: rgb(107, 7, 7,0.4);
+  backdrop-filter: blur(20px);
+  border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: myanimation 3s ease-in  0s infinite ;
+    transition-property: all;
+  
+    
+}
+.border{
+  border-top: 2px solid rgb(93, 6, 6);
+    border-right: 2px solid black;
+    border-bottom:2px solid rgb(93, 6, 6) ;
+    border-left: 2px solid black;
+  animation:borders 3s ease-in 0 infinite;
+}
+@keyframes borders{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+   transform: rotate(180deg);
+  }
+}
+.welcome h1{
+    font-size: 30px;
+    color: white;
+ 
+
+
+}
+
+@keyframes myanimation{
+
+    0%{
+       width:40%;
+      
+      
+       
+    }
+    
+    100%{
+      width: 50%;
+     
+     
+    }
+}
+.start{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  border-radius: 40px;
+  border: 2px solid rgb(93, 6, 6);
+   background-color: rgb(107, 7, 7,0.4);
+  backdrop-filter: blur(20px);
+  cursor: pointer;
+  
+  width: 10%;
+  height: 8%;
+
+}
+.start:hover{
+  background-color: transparent;
+   color: black;
+  box-shadow: 0 0 15px rgb(107, 7, 7);
+}
+.start a{
+  
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+
+}
+.logo {
+ background-image: url(logo.png);
+background-size: cover;
+  width: 40%;
+  height: 40%;
+}

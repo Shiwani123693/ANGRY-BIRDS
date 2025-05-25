@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+ 
+  
+     
+      font-family: sans-serif;
+      background-image: url(level2.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+  
+    z-index: -1;
+
+
+  
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+.container2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     font-family: 'Luckiest Guy', cursive; /* or your preferred font */
+  font-size: 50px;
+ /* Blue fill */
+  -webkit-text-stroke: 2px white;
+   background: linear-gradient(to bottom, #4fc3f7, #0288d1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* White border */
+  text-stroke: 2px white; /* Fallback for some browsers */
+    /* transform: scaleX(1.3); Increase this value to make it wider */
+  text-align: center;
+  text-shadow: 2px 2px 0 #140b87;
+  margin-top: 10px;
+}
+
+
+.level-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(5, 150px);
+  grid-gap: 20px;
+  
+}
+
+.level-box {
+  background: linear-gradient(to bottom, #4fc3f7, #0288d1);
+  border-radius: 15px;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  border: 4px solid rgb(8, 8, 103);
+  margin-top: 40px;
+}
+
+.level-box:hover {
+  transform: scale(1.05);
+}
+
+.stars {
+  font-size: 30px;
+  position: absolute;
+  top: 5px;
+}
+
+.level-number {
+  font-size: 50px;
+}
+
+.locked {
+  background: linear-gradient(to bottom, #4fc3f7, #0288d1);
+  cursor: not-allowed;
+}
+
+.lock-icon {
+  font-size: 24px;
+}
+.game-download{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  width: 100%;
+  background-color: rgba(18, 20, 39,0.6);
+  backdrop-filter: blur(20px);
+  height: 200px;
+}
+.downloader{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.k2 {
+ height:60px;
+ width:160px;
+ background-image: url(googleplaystore.png);
+ background-size: cover;
+}
